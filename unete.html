@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Unete</title>
+    
+</head>
+<body>
+            <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo" height="50" width="50"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>                    
+                    <li><a href="cuotas.html">Cuotas</a></li>
+                    <li><a href="clases.html">Clases</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="unete.html" class="btn btn-primary">¡Únete!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padding">
+            <div class="container text-center">
+                <h1>¡Únete a World Fitness Gym!</h1>
+                <p class="section-subtitle">Rellena el formulario y da el primer paso hacia una vida más saludable.</p>
+                <form class="form-unete" action="#" method="post" style="max-width:500;margin:0 auto;text-align:left;">
+                    <label for="nombre">Nombre completo*</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico*</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefono">Teléfono*</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9,15}">
+
+                    <label for="fecha_nacimiento">Fecha de nacimiento*</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+                    <label for="cuota">Tipo de cuota*</label>
+                    <select id="cuota" name="cuota" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="basica">Básica</option>
+                        <option value="plus">Plus</option>
+                        <option value="premium">Premium</option>
+                    </select>
+
+                    <label for="comentarios">Comentarios (opcional)</label>
+                    <textarea id="comentarios" name="comentarios" rows="3" placeholder="¿Tienes alguna preferencia o duda?"></textarea>
+
+                    <div style="margin:18 0 10 0;">
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto" style="display:inline;">Acepto la <a href="#" target="_blank">Política de Privacidad</a> y los <a href="#" target="_blank">Términos y Condiciones</a>*</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width:100%;font-size:1.2em;">Enviar Solicitud</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div class="footer-col logo-col">
+                            <img src="images/logo.png" alt="Logo World Fitness" height="60">
+                            <p>Transforma tu vida. Entrena más, vive mejor.</p>
+                            <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+                            <p><i class="fas fa-envelope"></i> info@worldfitnessgym.com</p>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Explora</h4>
+                            <ul>
+                                <li><a href="#clases">Clases</a></li>
+                                <li><a href="#cuotas">Cuotas</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Soporte</h4>
+                            <ul>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Política de Privacidad</a></li>
+                                <li><a href="#">Términos y Condiciones</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Síguenos</h4>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom text-center">
+                        <p>&copy; 2023 World Fitness Gym. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>
