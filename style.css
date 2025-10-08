@@ -631,81 +631,104 @@ main {
     margin-top: 20px;
 }
 
-
-
-
-
-/* --- Estilos para Móviles y Tablets (Responsive) --- */
 @media (max-width: 768px) {
-
-    /* --- Ajustes Generales --- */
-    body {
-        font-size: 16px; /* Ajusta el tamaño de fuente base */
-    }
-
-    h1 { font-size: 2.4em; }
-    h2 { font-size: 2em; }
-    .hero-content h1 { font-size: 2.8em; }
-    .section-padding { padding: 50px 0; }
-
     .container {
-        padding: 0 15px; /* Menos padding lateral en el contenedor principal */
+        padding: 0 15px;
     }
 
-    /* --- Navegación / Header --- */
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 2em; }
+    h3 { font-size: 1.5em; }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
     .main-header .container {
-        flex-direction: column; /* Apila el logo y la navegación */
-        align-items: center;
-        padding: 10px 0;
+        flex-direction: column;
+        padding: 10px 15px;
     }
 
+    .main-header .logo img {
+        height: 60px;
+        width: 60px;
+        margin-left: 0;
+    }
+    
     #logo {
-        position: static; /* Quita el posicionamiento absoluto del logo */
-        margin-bottom: 10px;
+        position: static;
+        justify-content: center;
+        width: 100%;
     }
 
     .main-nav ul {
-        flex-direction: column; /* Menú de navegación en vertical */
-        align-items: center;
-        margin: 0;
-        padding: 0;
+        flex-direction: column;
+        margin-right: 0;
+        padding: 10px 0;
+        gap: 10px;
     }
 
     .main-nav ul li {
-        margin: 10px 0; /* Espacio vertical entre enlaces */
+        margin-left: 0;
     }
 
-    /* --- Grids de Programas, Testimonios y Footer --- */
-    .program-grid,
-    .testimonial-grid,
-    .footer-grid {
-        grid-template-columns: 1fr; /* Pasa todos los grids a una sola columna */
-        gap: 20px;
+    .main-nav ul li a {
+        font-size: 1em;
+        padding: 5px 0;
     }
-
-    /* --- Tabla de Horario --- */
-    .horario-wrapper {
+    
+    .main-nav .btn-primary {
         width: 100%;
-        overflow-x: auto; /* AÑADE SCROLL HORIZONTAL A LA TABLA */
-        -webkit-overflow-scrolling: touch; /* Scroll más suave en iOS */
-        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding: 100px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 3em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .program-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
     }
 
     .horario-clases {
-        min-width: 800px; /* Evita que la tabla se comprima y se rompa */
-        font-size: 0.95em;
+        min-width: 100%;
+        display: block;
+        overflow-x: auto; 
+    }
+    
+    .horario-clases table {
+        width: 900px;
     }
     
     .horario-clases th, .horario-clases td {
-        padding: 14px 10px; /* Menos padding en las celdas */
+        padding: 12px 15px;
+        font-size: 0.9em;
+    }
+    
+    .cta-banner h2 {
+        font-size: 2em;
     }
 
-    /* --- Blog --- */
-    .blog-list {
-        min-height: auto; /* Altura automática */
+    .map-placeholder iframe {
+        height: 300px;
     }
 
-    .blog-article {
-        padding: 2rem 1.5rem; /* Menos padding en los artículos */
+    .footer-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
