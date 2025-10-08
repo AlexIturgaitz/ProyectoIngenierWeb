@@ -635,3 +635,77 @@ main {
 
 
 
+/* --- Estilos para Móviles y Tablets (Responsive) --- */
+@media (max-width: 768px) {
+
+    /* --- Ajustes Generales --- */
+    body {
+        font-size: 16px; /* Ajusta el tamaño de fuente base */
+    }
+
+    h1 { font-size: 2.4em; }
+    h2 { font-size: 2em; }
+    .hero-content h1 { font-size: 2.8em; }
+    .section-padding { padding: 50px 0; }
+
+    .container {
+        padding: 0 15px; /* Menos padding lateral en el contenedor principal */
+    }
+
+    /* --- Navegación / Header --- */
+    .main-header .container {
+        flex-direction: column; /* Apila el logo y la navegación */
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    #logo {
+        position: static; /* Quita el posicionamiento absoluto del logo */
+        margin-bottom: 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Menú de navegación en vertical */
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0; /* Espacio vertical entre enlaces */
+    }
+
+    /* --- Grids de Programas, Testimonios y Footer --- */
+    .program-grid,
+    .testimonial-grid,
+    .footer-grid {
+        grid-template-columns: 1fr; /* Pasa todos los grids a una sola columna */
+        gap: 20px;
+    }
+
+    /* --- Tabla de Horario --- */
+    .horario-wrapper {
+        width: 100%;
+        overflow-x: auto; /* AÑADE SCROLL HORIZONTAL A LA TABLA */
+        -webkit-overflow-scrolling: touch; /* Scroll más suave en iOS */
+        padding-bottom: 10px;
+    }
+
+    .horario-clases {
+        min-width: 800px; /* Evita que la tabla se comprima y se rompa */
+        font-size: 0.95em;
+    }
+    
+    .horario-clases th, .horario-clases td {
+        padding: 14px 10px; /* Menos padding en las celdas */
+    }
+
+    /* --- Blog --- */
+    .blog-list {
+        min-height: auto; /* Altura automática */
+    }
+
+    .blog-article {
+        padding: 2rem 1.5rem; /* Menos padding en los artículos */
+    }
+}
